@@ -1,0 +1,428 @@
+* {
+margin: 0;
+padding: 0;
+ }
+ body {
+     background-color: skyblue;
+
+ }
+ .navbar .left .logo {
+     height: 130px;
+     width: 170px;
+     margin-left: 70px;
+ }
+ .navbar {
+     background-color: blue;
+ }
+ .navbar .middle  {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 25px; 
+     margin-top: -10px;
+     margin-left: -260px;
+    }
+    .navbar .middle a {
+        color: black;
+        padding: 0px 60px;
+        font-size: 40px;
+        font-family: 'Goldman', cursive;
+    }
+    .navbar .middle a:hover {
+        background: blue;
+        color: white;
+    }
+    .navbar .middle button {
+        color: black;
+        font-size: 40px;
+        font-family: 'Goldman', cursive;;
+    }
+    .right .btn {
+        margin-right: 100px;
+        font-size: 25px;
+    }
+  
+    .modal {
+        font-size: 70%;
+    }
+ .right .modal-header .modal-title{
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .modal .modal-body .form-group {
+      font-size: 30px;
+    }
+    .form-check-input {
+        left: 7;
+    }
+    .modal .modal-body .form-group .form-control{
+        width: 100%;
+        padding: 25px;
+        font-size: 32px;
+    }
+    .modal .modal-body {
+     height: 50%;
+        width: 100%;
+    } 
+    .container1 .text {
+        font-size: 50px;
+        margin-top: 150px;
+        text-align: center;
+    }
+    .container1 .search {
+        height: 90px;
+        width: 50%;
+        font-size: 30px;
+        margin-top: 50px;
+        border-radius: 20px;
+        margin-left: 25%;
+    }
+    .container1 form .enter .fa {
+        border-radius: 80%;
+        background-color: rgb(73, 73, 223);
+        font-size: 1.5cm;
+        float: right;
+        cursor: pointer;
+        margin-right: 21%;
+        margin-top: 55px;
+        padding: 16px;
+    
+    }
+    .container1 .para {
+        color: black;
+        font-size: 27px;
+        margin-top: 55px;
+        text-align: center;
+    }
+    .btn {
+        font-size: 35px;
+        align-items: center;
+        justify-content: center;
+     padding: 20px;
+     border-radius: 20px;
+     margin: 15px;
+     display: flex;
+    }
+    #movie {
+        display: contents;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    #movie .card .card-img-top {
+        height: 400px;
+        width: 100%;
+    }
+    #movie .card .card-title {
+        font-size: 40px;
+    }
+    #movie .card .card-text {
+        font-size: 25px;
+    }
+    #movie .card a {
+        padding: 10px;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 282px;
+        margin-left: 660px;
+    }
+ .movie2 {
+        display: flex;
+        margin-top: 500px;
+        margin-left: -200px;
+        justify-content: center;
+        align-items: center;
+    }
+  .trend{
+        font-size: 60px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        margin-left: 10%;
+        text-align: left;  
+        margin-top: 50px;
+        margin-bottom: 30px;
+        text-shadow: 2px 5px red;
+  }
+.trend1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-left: 10%;
+    text-align: left;  
+    margin-top: 150px;
+    text-shadow: 2px 5px blue;
+    margin-bottom: 10px;
+}
+.trend2 {
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-left: 10%;
+    text-align: left;  
+    margin-top: 150px;
+    text-shadow: 2px 5px blue;
+    margin-bottom: 10px;
+}
+  .sec2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+      margin-top: 100px;
+      margin-bottom: 50px;
+  }
+
+  .webseries {
+      display: flex;
+      margin-left: 280px;
+      gap: 80px;
+      margin-top: -70px;
+  }
+  .webseries .card .card-img-top {
+    height: 400px;
+    width: 100%;   
+  }
+  .webseries .card .card-title {
+    font-size: 40px;
+    margin-top: -80px;
+    font-weight: bold;
+}
+.webseries .card .card-img-top {
+  height: 400px;
+  width: 100%;   
+}
+.webseries .card .card-title {
+  font-size: 40px;
+}
+.webseries .card .card-text {
+  font-size: 25px;
+}
+.webseries .card a {
+  padding: 10px;
+}
+.webseries .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+}
+.webseries .card .card-text {
+    font-size: 25px;
+
+}
+.webseries .card a {
+    padding: 10px;
+}
+.webseries .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.webseries2 {
+    display: flex;
+    gap: 80px;
+    margin-left: 280px;
+}
+.webseries2 .card .card-img-top {
+  height: 400px;
+  width: 100%;   
+}
+.webseries2 .card .card-title {
+  font-size: 40px;
+  margin-top: -80px;
+  font-weight: bold;
+}
+.webseries2 .card .card-text {
+  font-size: 25px;
+}
+.webseries2 .card a {
+  padding: 10px;
+}
+.webseries2 .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+}
+/*wb3*/ 
+.webseries3 {
+    display: flex;
+    gap: 80px;
+    margin-left: 280px;
+}
+.webseries3 .card .card-img-top {
+  height: 400px;
+  width: 100%;   
+}
+.webseries3 .card .card-title {
+  font-size: 40px;
+  margin-top: -80px;
+  font-weight: bold;
+}
+.webseries3 .card .card-text {
+  font-size: 25px;
+}
+.webseries3 .card a {
+  padding: 10px;
+}
+.webseries3 .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+}
+.show1{
+    display: flex;
+    gap: 80px;
+    margin-left: 280px;
+    margin-top: -80px;
+}
+.show1 .card .card-img-top {
+  height: 400px;
+  width: 100%;   
+}
+.show1 .card .card-title {
+  font-size: 40px;
+  margin-top: -80px;
+  font-weight: bold;
+}
+.show1 .card .card-text {
+  font-size: 25px;
+}
+.show1 .card a {
+  padding: 10px;
+}
+.show1 .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+}
+.show2{
+    display: flex;
+    gap: 80px;
+    margin-left: 280px;
+}
+.show2 .card .card-img-top {
+  height: 400px;
+  width: 100%;   
+}
+.show2 .card .card-title {
+  font-size: 40px;
+  margin-top: -80px;
+  font-weight: bold;
+}
+.show2 .card .card-text {
+  font-size: 25px;
+}
+.show2 .card a {
+  padding: 10px;
+}
+.show2 .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+}
+.show3 {
+    display: flex;
+    gap: 80px;
+    margin-left: 280px;
+}
+.show3 .card .card-img-top {
+  height: 400px;
+  width: 100%;   
+}
+.show3 .card .card-title {
+  font-size: 40px;
+  margin-top: -80px;
+  font-weight: bold;
+}
+.show3 .card .card-text {
+  font-size: 25px;
+}
+.show3 .card a {
+  padding: 10px;
+}
+.show3 .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+}
+
+/* footer */
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 280px;
+}
+.footer .footlogo {
+    margin-left: 100px;
+    height: 200px;
+    margin-top: 30px;
+}
+.footer .middle1 .footpara {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-top: -130px;
+    padding: 0px 500px;
+}
+.fm1 .modal .modal-body .ptext {
+    font-size: 23px;
+}
+.fm1 {
+ width: 1000px;
+}
+.fm1 .btn {
+    float: right;
+    margin-right: -1550px;
+    margin-top: -90px;
+}
+.fm1 .modal .modal-title {
+    font-size: 40px;
+  
+}/*
+.fm1 .modal .modal-footer .btn {
+width: 60%;
+margin-top: -2px;
+height: 80px;
+}*/
+.fm1 .modal .modal-footer {
+    font-size: 15px;
+    height: 110px;
+} 
+.fm1 .modal .modal-footer .btn1 {
+  font-size: 35px;
+  border-radius: 15px;
+  padding: 0px 10px;
+}
+.fm1 #myModal {
+    width: 600px;
+}

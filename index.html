@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pophub</title>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="left">
+            <img class="logo" src="./imgs/logo.jpg">
+        </div>
+
+        <div class="middle">
+            <a href="#home">Home</a>
+
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Genre
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Animation</a>
+                    <a class="dropdown-item" href="#">Reality</a>
+                    <a class="dropdown-item" href="#">Comedy</a>
+                    <a class="dropdown-item" href="#">Romantic</a>
+                    <a class="dropdown-item" href="#">Adventure</a>
+                    <a class="dropdown-item" href="#">Horror</a>
+                    <a class="dropdown-item" href="#">Secret</a>
+                    <a class="dropdown-item" href="#">Crime</a>
+                    <a class="dropdown-item" href="#">Science</a>
+                    <a class="dropdown-item" href="#">Mystery</a>
+                </div>
+            </div>
+
+
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Country
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Australia</a>
+                    <a class="dropdown-item" href="#">England</a>
+                    <a class="dropdown-item" href="#">India</a>
+                    <a class="dropdown-item" href="#">Pakistan</a>
+                    <a class="dropdown-item" href="#">Bangladsh</a>
+                    <a class="dropdown-item" href="#">America</a>
+                    <a class="dropdown-item" href="#">Spain</a>
+                    <a class="dropdown-item" href="#">Switzerland</a>
+                    <a class="dropdown-item" href="#">Canada</a>
+                    <a class="dropdown-item" href="#">Italy</a>
+                    <a class="dropdown-item" href="#">Srilanka</a>
+                </div>
+            </div>
+
+
+            <a href="#movie">Movies</a>
+            <a href="#web">Webseries</a>
+            <a href="#show">Tv Shows</a>
+
+        </div>
+        <div class="right">
+            <button class="btn btn-light" data-toggle="modal" data-target="#myModal">login / Register</button>
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Welcome!</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form action="/action_page.php">
+                                <div class="form-group">
+                                    <label for="email">Email address:</label>
+                                    <input type="email" class="form-control" placeholder="Enter email" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Password:</label>
+                                    <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                                </div>
+
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </form>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!--
+            
+<button type="button" class="btn btn-light" data-toggle="modal" data-target="#myModal">
+    LogIn / Register
+  </button>
+  
+
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+       
+        <div class="modal-header">
+          <h4 class="modal-title">Welcome</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+              </form>
+        </div>
+  
+       
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+    -->
+        </div>
+        </div>
+        </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="container1">
+            <h5 class="text">Find Movies, TV shows and more</h5>
+            <form>
+                <div class="enter">
+                    <input class="search" type="text" placeholder="  Enter Keywords">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </div>
+            </form>
+            <p class="para">Pophub, watch online movies, movies streaming free, free movies, free full hd movies, watch
+                series online, watch full movies free, download movies hd, series online free, series online hd, watch
+                series online free.
+                If you are looking for a free movies site with 720 and 1080 HD resolution, then Pophub is what you need.
+                We
+                have over 300.000 videos and most of them is in HD with free access. Forget all the hassle when you're
+                trying to watch your favorite movies or shows on other sites, on Pophub what you need to do is to click
+                on
+                Play button and everything is set. Welcome to MyFlixer and hope that you will like the site.</p>
+        </div>
+        <div class="btn">
+            <button type="button" class="btn btn-primary">Facebook</button>
+            <button type="button" class="btn btn-secondary">Email</button>
+            <button type="button" class="btn btn-success">Whatsapp</button>
+            <button type="button" class="btn btn-danger">Youtube</button>
+            <button type="button" class="btn btn-warning">Snapchat</button>
+            <button type="button" class="btn btn-info">Twitter</button>
+        </div>
+
+    </section>
+    <h1 class="trend">TRENDING</h1>
+    <hr>
+    <section id="movie">
+
+        <div class="container">
+            <div class="col-lg-3 md-3 sm-12">
+                <div class="card" style="width: 30rem;">
+                    <img src="./imgs/13.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Annabelle</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quo
+                            soluta
+                            eum, error debitis facere dolorum vitae dignissimos cum explicabo dolor saepe rem
+                            deleniti.
+                            Eaque facere repudiandae quaerat architecto suscipit?.</p>
+                        <a href="#" class="btn btn-primary">Watch now</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 md-3 sm-12">
+                <div class="card" style="width: 30rem;">
+                    <img src="./imgs/5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pride Prejudice Zombies</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat dolore
+                            ipsa earum deleniti quisquam deserunt, perspiciatis amet non quibusdam odio. Dolore
+                            neque
+                            facere iusto incidunt magnam vel perferendis corporis molestiae..</p>
+                        <a href="#" class="btn btn-primary">Watch now</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-3 md-3 sm-12">
+                <div class="card" style="width: 30rem;">
+                    <img src="./imgs/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tomb Raider</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
+                            aperiam
+                            dolorem repudiandae quod dolor officia deserunt totam rerum ipsam quasi, architecto
+                            excepturi voluptatum voluptatibus, assumenda temporibus tempora maximes.</p>
+                        <a href="#" class="btn btn-primary">Watch now</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 md-3 sm-12">
+                <div class="card" style="width: 30rem;">
+                    <img src="./imgs/4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Proximity</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem veritatis
+                            quidem quis in harum quas iste earum, mollitia officia ex eum quaerat commodi labore
+                            consequatur officiis voluptatibus, delectus minus sit!</p>
+                        <a href="#" class="btn btn-primary">Watch now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <!--
+                    <div class="movie2">
+            
+                 <div class="m1">
+                    <div class="col-lg-3 md-3 sm-12">
+                        <div class="card" style="width: 30rem;">
+                            <img src="./imgs/5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pride</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+                                    veritatis
+                                    quidem quis in harum quas iste earum, mollitia officia ex eum quaerat commodi labore
+                                    consequatur officiis voluptatibus, delectus minus sit!</p>
+                                <a href="#" class="btn btn-primary">Watch now</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                 <div class="m1">
+                    <div class="col-lg-3 md-3 sm-12">
+                        <div class="card" style="width: 30rem;">
+                            <img src="./imgs/6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Knives out</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+                                    veritatis
+                                    quidem quis in harum quas iste earum, mollitia officia ex eum quaerat commodi labore
+                                    consequatur officiis voluptatibus, delectus minus sit!</p>
+                                <a href="#" class="btn btn-primary">Watch now</a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="m1">
+                    <div class="col-lg-3 md-3 sm-12">
+                        <div class="card" style="width: 30rem;">
+                            <img src="./imgs/7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Terminator</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+                                    veritatis
+                                    quidem quis in harum quas iste earum, mollitia officia ex eum quaerat commodi labore
+                                    consequatur officiis voluptatibus, delectus minus sit!</p>
+                                <a href="#" class="btn btn-primary">Watch now</a>
+                            </div>
+                        </div>
+                    </div>
+                 < /div>
+                 <div class="m1">
+                    <div class="col-lg-3 md-3 sm-12">
+                        <div class="card" style="width: 30rem;">
+                            <img src="./imgs/8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Black Widow</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+                                    veritatis
+                                    quidem quis in harum quas iste earum, mollitia officia ex eum quaerat commodi labore
+                                    consequatur officiis voluptatibus, delectus minus sit!</p>
+                                <a href="#" class="btn btn-primary">Watch now</a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 -->
+
+        <div class="sec2">
+
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Terminator 5</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+                        laboriosam aut culpa impedit modi sint deserunt minima ducimus repudiandae, tenetur quaerat
+                        possimus suscipit similique adipisci quas maxime optio.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Black widow</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, repudiandae
+                        itaque? Accusamus suscipit perspiciatis laborum quas nobis molestias, ea tempora quam fugit fuga
+                        et dolorem harum placeat eaque in recusandae..</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Max steel</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur reprehenderit
+                        doloribus quis voluptas exercitationem quidem vero, eligendi aliquid fuga quasi consequuntur
+                        harum. Quod pariatur, magni sit fugit cupiditate.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/14.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Fifty Shades Of Grey </h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nihil
+                        doloribus illum quas aliquid perferendis obcaecati minus eligendi nam. Iusto a ipsam maxime
+                        dolorum temporibus corrupti enim eveniet atque tempore..</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!--Webseries start-->
+    <section id="web">
+        <h1 class="trend1">WEBSERIES</h1>
+        <hr>
+        <div class="webseries">
+
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/wb1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Money hiest</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore mollitia
+                        esse ad est ipsum exercitationem. Nisi, illo similique rerum eius voluptatibus reiciendis,
+                        aliquam, quibusdam quae alias iusto praesentium esse quidem..</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/wb2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">A discover of witches</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto quam
+                        tenetur obcaecati magni. Laudantium velit alias necessitatibus accusantium eveniet eum neque
+                        delectus ipsum harum, nobis libero nemo dicta vel!.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/wb3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">The last kingdom</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, nisi, quod
+                        quibusdam quos quasi explicabo similique esse nostrum exercitationem sequi sunt, possimus
+                        officiis eaque? Ipsa aperiam perferendis exercitationem deserunt.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/wb5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Vampire diaries</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt accusamus eaque!.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="webseries2">
+
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/wb6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Stranger Things</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt accusamus eaque!.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/wb10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Your Honor</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt accusamus eaque!.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/wb8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Sex Education</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt accusamus eaque!.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/wb9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">You</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt accusamus eaque!.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="webseries3">
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/wb11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Kissing Booth</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt accusamus eaque!.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/wb12.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Kissing Booth 2</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt accusamus eaque!.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/88pg.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">The Protection</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt accusamus eaque!.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/wb7jpg.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ratched</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt accusamus eaque!.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!--webseries end-->
+
+    <!--Tv show start-->
+    <section id="show">
+        <h1 class="trend2">Tv Shows</h1>
+        <hr>
+        <div class="show1">
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/tv1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Grey's Anatomy</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt accusamus eaque!.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/tv2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Big Bang Theory</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt accusamus eaque!.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/tv3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> The City</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt accusamus eaque!.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/tv4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Hollywood</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt accusamus eaque!.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--s2-->
+
+        <div class="show2">
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/tv5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">No Talking Only Recording</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/tv6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Her</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/tv7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Hollywood Exes</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/tv8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">I am not okay with this </h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="show3">
+
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/tv9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">I AM Not Okay With This</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/tv10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Spartacus</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/tv11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Black Mirror</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+            <div class="card" style="width: 30rem;">
+                <img src="./imgs/tv12.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">The Good Cop</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi aliquam vero
+                        sapiente alias suscipit, officiis blanditiis quasi autem beatae, dolorum voluptatum ratione
+                        ipsam, esse dolores? Dolorem nesciunt.</p>
+                    <a href="#" class="btn btn-primary">Watch now</a>
+                    <a href="#" class="btn btn-danger">Download</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--Tv show end-->
+
+    <!--footer start-->
+
+
+
+    <div class="footer">
+        <div class="left1">
+            <img class="footlogo" src="./imgs/logo.jpg">
+        </div>
+
+        <div class="middle1">
+            <p class="footpara">
+                Pophub is a Free Movies streaming site with zero ads. We let you watch movies online without having to
+                register or paying, with over 10000 movies and TV-Series. You can also Download full movies from Pophub
+                and watch it later if you want. </p>
+
+        </div>
+
+        <div class="fm1">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                Privacy Policy
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Privacy</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="ptext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptas
+                                assumenda architecto quibusdam sequi nisi inventore mollitia saepe doloremque at. Ab
+                                error ullam obcaecati dolorem magni aliquam repellendus sapiente ipsum?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime a, ipsam alias
+                                blanditiis eum repellat. In possimus rerum distinctio, suscipit doloremque vitae
+                                provident ab, sed officia beatae, quas nam.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quisquam officiis
+                                cupiditate. Totam labore, vitae quidem voluptatibus aliquid dolore exercitationem
+                                officiis tenetur consequuntur velit? Nobis quas autem eveniet reiciendis eaque!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur enim illum ab eum,
+                                veniam doloribus necessitatibus repudiandae expedita inventore voluptates velit nemo
+                                provident quas assumenda doloremque consequatur quis quisquam magnam.
+                                it facere itaque maxime adipisci minus dignissimos nam mollitia, dolores sunt natus,
+                                beatae vel quisquam ab magnam asperiores.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn1 btn-success" data-dismiss="modal">Accept</button>
+                            <button type="button"  class="btn1 btn-danger" data-dismiss="modal">Decline</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--footer end-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
